@@ -42,6 +42,16 @@ section {
 .hero {
   background: #e0f7fa;
   padding: 100px 20px;
+  text-align: center;
+}
+
+.hero img.amisha-profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #008080;
 }
 
 footer {

@@ -26,22 +26,23 @@ section {
 /* Navbar Styles */
 .navbar {
   display: flex;
-  justify-content: center;
-  background-color: #008080;
+  justify-content: center; /* Centers the content horizontally */
+  background-color: #008080; /* Teal color */
   padding: 10px;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Ensures items remain in a single row */
   justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .navbar ul li {
-  margin: 0 15px;
+  margin: 0 15px; /* Adds spacing between items */
 }
 
 .navbar ul li a {
@@ -54,7 +55,7 @@ section {
 }
 
 .navbar ul li a:hover {
-  background-color: #f4a261;
+  background-color: #f4a261; /* Highlight on hover */
 }
 
 /* Hero Section */
@@ -249,15 +250,23 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
+/* Responsive Navbar for Small Screens */
+@media (max-width: 768px) {
   .navbar ul {
-    flex-direction: column;
+    flex-wrap: wrap; /* Wraps items if needed */
+    justify-content: space-evenly; /* Spreads items evenly */
+    padding: 5px;
   }
 
   .navbar ul li {
-    margin: 10px 0;
+    margin: 5px; /* Adjusts spacing between items */
   }
+
+  .navbar ul li a {
+    padding: 8px; /* Increases padding for better touch experience */
+    font-size: 14px; /* Adjusts text size for smaller screens */
+  }
+}
 
   .hero img {
     width: 120px;

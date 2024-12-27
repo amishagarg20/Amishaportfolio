@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Amisha Garg</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Amisha Garg</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-</nav>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <h1>Amisha Garg</h1>
-        <p>Data Engineer | Machine Learning Enthusiast | DevOps Engineer</p>
-    </header>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me!</p>
-        <p>Email: <a href="mailto:amishagarg828@gmail.com">amishagarg828@gmail.com</a></p>
-        <div class="socials">
-            <a href="https://github.com/amishagarg20" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/amishagarg1120" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </section>
-    
-    
-<footer>
+  <!-- Contact Section -->
+  <section class="contact">
+    <h1>Contact Me</h1>
+    <form action="#" method="post" id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
     <p>&copy; 2024 Amisha Garg. All rights reserved.</p>
-    <p><a href="https://www.linkedin.com/">LinkedIn</a> | <a href="https://github.com/">GitHub</a></p>
-</footer>
-
+  </footer>
 </body>
 </html>

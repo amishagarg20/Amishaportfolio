@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amisha Garg | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="light-mode">
     <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#services">What I'm Doing</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
         <div class="theme-toggle">
             <label>
                 <input type="checkbox" id="themeSwitch">
@@ -24,33 +26,52 @@
     <!-- Hero Section -->
     <header id="hero">
         <h1>Hello, I'm <span>Amisha Garg</span></h1>
-        <p>Certified AWS Cloud Practitioner</p>
+        <p>Certified AWS Cloud Practitioner | Data Scientist | DevOps Engineer</p>
         <div class="social-links">
-            <a href="https://linkedin.com/in/amishagarg" target="_blank">LinkedIn</a>
-            <a href="https://github.com/amishagarg20" target="_blank">GitHub</a>
-            <a href="#contact">Contact</a>
+            <a href="https://linkedin.com/in/amishagarg" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/amishagarg20" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#contact"><i class="fas fa-envelope"></i></a>
         </div>
     </header>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill">
-            <h3>Python</h3>
-            <div class="progress-bar"><div style="width: 95%;"></div></div>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Certified AWS Cloud Practitioner with expertise in data engineering, data science, and DevOps. Skilled in building ETL pipelines,
+        real-time data streaming, and cloud solutions using AWS. Proficient in Python, SQL, and machine learning frameworks like TensorFlow.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>What I'm Doing</h2>
+        <div class="service">
+            <i class="fas fa-database"></i>
+            <h3>Data Engineering</h3>
+            <p>Building scalable ETL pipelines and managing real-time data streaming.</p>
         </div>
-        <div class="skill">
-            <h3>SQL</h3>
-            <div class="progress-bar"><div style="width: 85%;"></div></div>
+        <div class="service">
+            <i class="fas fa-chart-line"></i>
+            <h3>Data Science</h3>
+            <p>Applying machine learning for predictive analytics and business insights.</p>
         </div>
-        <div class="skill">
-            <h3>Machine Learning</h3>
-            <div class="progress-bar"><div style="width: 90%;"></div></div>
+        <div class="service">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud Solutions</h3>
+            <p>Designing and deploying cloud infrastructure with AWS services.</p>
         </div>
-        <div class="skill">
-            <h3>AWS Cloud</h3>
-            <div class="progress-bar"><div style="width: 88%;"></div></div>
+        <div class="service">
+            <i class="fas fa-code"></i>
+            <h3>DevOps</h3>
+            <p>Automating deployments with Docker, Kubernetes, and CI/CD pipelines.</p>
         </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my resume or view it online.</p>
+        <a href="docs/AmishaFinalResume.pdf" target="_blank" class="btn">Download Resume</a>
+        <iframe src="docs/AmishaFinalResume.pdf" width="100%" height="600px"></iframe>
     </section>
 
     <!-- Projects Section -->
@@ -78,24 +99,6 @@
         </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Download my resume or view it online.</p>
-        <a href="docs/AmishaFinalResume.pdf" target="_blank" class="btn">Download Resume</a>
-        <iframe src="docs/AmishaFinalResume.pdf" width="100%" height="600px"></iframe>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements">
-        <h2>Achievements & Certifications</h2>
-        <ul>
-            <li>AWS Certified Cloud Practitioner (2024)</li>
-            <li>Power Award | Ericsson (2021)</li>
-            <li>Hackathon Winner (2022)</li>
-        </ul>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
@@ -111,8 +114,8 @@
     <footer>
         <p>&copy; 2024 Amisha Garg. All Rights Reserved.</p>
         <div class="social-links">
-            <a href="https://linkedin.com/in/amishagarg" target="_blank">LinkedIn</a>
-            <a href="https://github.com/amishagarg20" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/amishagarg1120" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/amishagarg20" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </footer>
 

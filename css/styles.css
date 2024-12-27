@@ -154,6 +154,24 @@ footer {
 .about-content a:hover {
   color: #f4a261;
 }
+/* About Section Profile Image */
+.profile-pic img {
+  width: 150px; /* Set a maximum width */
+  height: 150px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make it circular */
+  border: 4px solid #008080; /* Add a border */
+  object-fit: cover; /* Ensure proper scaling */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Block-level element for better alignment */
+}
+
+@media (max-width: 768px) {
+  .profile-pic img {
+    width: 120px; /* Adjust size for smaller screens */
+    height: 120px;
+  }
+}
+
 
 /* Skills Section */
 .skills {

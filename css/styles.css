@@ -288,7 +288,7 @@ a {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
   gap: 20px;
 }
 
@@ -324,24 +324,15 @@ a {
   line-height: 1.5;
 }
 
-/* Footer Styles */
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #008080;
-  color: white;
-  font-size: 0.9rem;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-  .projects-grid {
+  .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
 @media (max-width: 480px) {
-  footer {
-    font-size: 0.8rem;
+  .skill-item p {
+    font-size: 0.9rem;
   }
 }

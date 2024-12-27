@@ -7,8 +7,9 @@ body {
   color: #333;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
   margin: 0;
+  line-height: 1.6;
 }
 
 a {
@@ -36,17 +37,19 @@ img {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
-}
-
-.navbar li {
-  margin: 0;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .navbar a {
@@ -240,6 +243,11 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .about-container {
     flex-direction: column;
     text-align: center;
@@ -287,5 +295,9 @@ footer {
 
   .project-card {
     max-width: 100%;
+  }
+
+  footer {
+    font-size: 0.8rem;
   }
 }

@@ -158,13 +158,49 @@ section {
 }
 
 /* Project Section */
+.projects-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Horizontal Scroll Container */
+.projects-grid {
+  display: flex;
+  gap: 20px; /* Space between project cards */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #008080 #f5f5f5;
+  padding-bottom: 10px; /* For spacing below cards */
+}
+
+/* Scrollbar Customization (for Chrome, Edge, Safari) */
+.projects-grid::-webkit-scrollbar {
+  height: 10px;
+}
+
+.projects-grid::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+  background-color: #008080;
+  border-radius: 10px;
+}
+
+/* Project Card */
 .project-card {
+  min-width: 300px; /* Sets fixed width for each card */
+  flex-shrink: 0; /* Prevents cards from shrinking */
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 20px auto;
-  max-width: 400px;
   text-align: center;
 }
 
@@ -202,6 +238,7 @@ section {
 .project-card a:hover {
   background-color: #f4a261;
 }
+
 
 /* Contact Section */
 .contact-form {

@@ -271,3 +271,87 @@ footer {
     font-size: 0.8rem;
   }
 }
+/* Project Details Section */
+.project-details {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-details h1 {
+  font-size: 2.5rem;
+  color: #008080;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-intro {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.key-responsibilities, .technical-details {
+  margin: 20px 0;
+}
+
+.key-responsibilities h2, .technical-details h2, .visuals h2 {
+  font-size: 2rem;
+  color: #f4a261;
+  margin-bottom: 15px;
+}
+
+.key-responsibilities ul, .technical-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.key-responsibilities ul li, .technical-details ul li {
+  margin-bottom: 10px;
+}
+
+.visuals {
+  margin: 30px 0;
+}
+
+.visual-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.visual-images img {
+  width: 45%; /* Adjust width dynamically */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.github-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.github-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008080;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.github-link:hover {
+  background-color: #f4a261;
+}

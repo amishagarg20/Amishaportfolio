@@ -194,6 +194,56 @@ img {
 .project-card a:hover {
   background: #f4a261;
 }
+/* Project Details Section */
+.project-details {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.project-details h1 {
+  font-size: 2.5rem;
+  color: #008080;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.project-details p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.star-format h2 {
+  font-size: 1.5rem;
+  color: #f4a261;
+  margin-bottom: 10px;
+}
+
+.star-format p, .star-format ul {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.star-format ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #008080;
+  color: #fff;
+}
+
 
 /* Contact Section */
 .contact {

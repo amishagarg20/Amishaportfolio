@@ -1,282 +1,53 @@
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
-:root {
-  /**
-   * Colors
-   */
-  --primary-color: #008080; /* Teal */
-  --secondary-color: #f4a261; /* Warm gold */
-  --background-light: #f9f9f9; /* Light background */
-  --background-dark: #1e1e1e; /* Dark background */
-  --text-light: #ffffff; /* White text */
-  --text-dark: #333333; /* Dark text */
-  --gray: #999999; /* Subtle gray */
-  --shadow-light: rgba(0, 0, 0, 0.1); /* Light shadow */
-
-  /**
-   * Typography
-   */
-  --font-family: 'Poppins', sans-serif;
-
-  --fs-heading: 2rem; /* Heading font size */
-  --fs-subheading: 1.5rem; /* Subheading font size */
-  --fs-body: 1rem; /* Body font size */
-  --fs-small: 0.875rem; /* Small text font size */
-
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-bold: 600;
-
-  /**
-   * Transition
-   */
-  --transition: all 0.3s ease-in-out;
-}
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
-
-*,
-*::before,
-*::after {
+body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #f4f4f9;
+  color: #333;
 }
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-button {
-  font: inherit;
-  cursor: pointer;
-}
-
-input,
-textarea {
-  font: inherit;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--gray);
-}
-
-::selection {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-}
-
-/*-----------------------------------*\
-  #GLOBAL STYLES
-\*-----------------------------------*/
-
-body {
-  font-family: var(--font-family);
-  font-size: var(--fs-body);
-  color: var(--text-dark);
-  background-color: var(--background-light);
-  line-height: 1.6;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: var(--primary-color);
-  font-weight: var(--fw-bold);
-  margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 20px;
-  color: var(--gray);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
 
 header {
-  background: var(--primary-color);
-  color: var(--text-light);
-  text-align: center;
-  padding: 50px 20px;
-  box-shadow: 0 4px 6px var(--shadow-light);
-}
-
-header h1 {
-  font-size: 2.5rem;
-}
-
-header p {
-  font-size: 1.25rem;
-}
-
-/*-----------------------------------*\
-  #ABOUT SECTION
-\*-----------------------------------*/
-
-#about {
-  text-align: center;
-  padding: 50px 20px;
-  background: var(--background-light);
-}
-
-#about h2 {
-  margin-bottom: 20px;
-}
-
-#about p {
-  color: var(--text-dark);
-  font-size: var(--fs-body);
-  margin-bottom: 20px;
-}
-
-/*-----------------------------------*\
-  #SKILLS SECTION
-\*-----------------------------------*/
-
-#skills {
-  background: var(--background-dark);
-  color: var(--text-light);
-  padding: 50px 20px;
-  text-align: center;
-}
-
-#skills h2 {
-  margin-bottom: 20px;
-}
-
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.skill {
-  background: var(--primary-color);
-  color: var(--text-light);
-  padding: 15px 20px;
-  border-radius: 8px;
-  font-size: var(--fs-small);
-  box-shadow: 0 4px 6px var(--shadow-light);
-  transition: var(--transition);
-}
-
-.skill:hover {
-  background: var(--secondary-color);
-}
-
-/*-----------------------------------*\
-  #PROJECTS SECTION
-\*-----------------------------------*/
-
-#projects {
-  background: var(--background-light);
-  padding: 50px 20px;
-  text-align: center;
-}
-
-#projects h2 {
-  margin-bottom: 30px;
-}
-
-.project-card {
-  background: var(--background-dark);
-  color: var(--text-light);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px var(--shadow-light);
-  margin-bottom: 20px;
-  overflow: hidden;
-  transition: var(--transition);
-}
-
-.project-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card h3 {
+  background: #008080;
+  color: #fff;
   padding: 15px;
 }
 
-.project-card p {
-  padding: 0 15px 15px;
-  color: var(--gray);
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/*-----------------------------------*\
-  #CONTACT SECTION
-\*-----------------------------------*/
+.navbar li {
+  margin: 0 15px;
+}
 
-#contact {
-  background: var(--primary-color);
-  color: var(--text-light);
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+section {
   padding: 50px 20px;
   text-align: center;
 }
 
-#contact h2 {
-  margin-bottom: 20px;
+.hero {
+  background: #e0f7fa;
+  padding: 100px 20px;
 }
-
-#contact form {
-  max-width: 600px;
-  margin: 0 auto;
-  background: var(--text-light);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px var(--shadow-light);
-}
-
-#contact button {
-  background: var(--secondary-color);
-  color: var(--text-light);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: var(--fs-body);
-  transition: var(--transition);
-}
-
-#contact button:hover {
-  background: var(--primary-color);
-  transform: scale(1.05);
-}
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
 
 footer {
-  background: var(--background-dark);
-  color: var(--text-light);
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+  background: #333;
+  color: white;
+  margin-top: 20px;
 }

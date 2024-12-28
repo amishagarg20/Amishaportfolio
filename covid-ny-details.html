@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 in New York State - Details</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Project Details Section -->
+  <section class="project-details">
+    <h1>COVID-19 in New York State - Demographic Analysis of COVID-19 Outcomes</h1>
+    <p class="project-intro">
+      This project analyzes the impact of demographic and socio-economic factors on COVID-19 infection, 
+      death, and fatality rates across four pandemic waves in New York State.
+    </p>
+
+    <div class="project-overview">
+      <h2>Overview</h2>
+      <p>
+        The goal of this analysis is to understand the role of demographics in the spread and impact of COVID-19. 
+        Using data from multiple sources, the project examines key predictors like age, ethnicity, and poverty to 
+        identify patterns across counties in New York State.
+      </p>
+    </div>
+
+    <div class="methodology">
+      <h2>Methodology</h2>
+      <ul>
+        <li><strong>Data Collection:</strong> Integrated datasets from Syracuse.com and the American Community Survey.</li>
+        <li><strong>Feature Engineering:</strong> Calculated infection, death, and fatality rates for each wave.</li>
+        <li><strong>Clustering:</strong> Applied K-means clustering to segment counties based on COVID-19 outcomes.</li>
+        <li><strong>Modeling:</strong> Evaluated Linear Regression, Random Forest, and SVM models for predictive analysis.</li>
+        <li><strong>Visualization:</strong> Created heatmaps and maps to explore geographic and demographic trends.</li>
+      </ul>
+    </div>
+
+    <div class="findings">
+      <h2>Key Findings</h2>
+      <ul>
+        <li>Age and diabetes were significant predictors of COVID-19 outcomes.</li>
+        <li>Linear Regression performed best among the models, but highlighted the need for more data.</li>
+        <li>Socioeconomic factors, like poverty and education, influenced infection and fatality rates.</li>
+      </ul>
+    </div>
+
+    <div class="visuals">
+      <h2>Visualizations</h2>
+      <div class="visual-images">
+        <img src="Images/covid_heatmap.png" alt="Heatmap">
+        <img src="Images/covid_scatterplot.png" alt="Scatterplot">
+        <img src="Images/covid_cluster_map.png" alt="Cluster Map">
+      </div>
+    </div>
+
+    <div class="tools-tech">
+      <h2>Technologies Used</h2>
+      <p>
+        <strong>Tools:</strong> Python, Tableau, Matplotlib, Seaborn<br>
+        <strong>Libraries:</strong> Pandas, Scikit-learn, PCA Analysis<br>
+        <strong>Data Integration:</strong> Combined demographic and geographic data from multiple sources.
+      </p>
+    </div>
+
+    <div class="challenges">
+      <h2>Challenges and Limitations</h2>
+      <ul>
+        <li>Small sample size (64 counties) limited statistical significance.</li>
+        <li>Potential inaccuracies due to merging diverse datasets.</li>
+      </ul>
+    </div>
+
+    <div class="conclusion">
+      <h2>Conclusion</h2>
+      <p>
+        The analysis demonstrated the significant impact of demographic factors on COVID-19 outcomes. 
+        While linear regression provided the best performance, the insights underscore the need for larger, 
+        more granular datasets for more robust conclusions.
+      </p>
+    </div>
+
+    <div class="github-section">
+      <a href="https://github.com/amishagarg20/COVID-NY-Demographic-Analysis" target="_blank" class="github-link">
+        View the Full Project on GitHub
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Amisha Garg. All rights reserved.</p>
+  </footer>
+</body>
+</html>

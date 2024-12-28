@@ -625,3 +625,38 @@ a {
   color: #f4a261;
   margin-bottom: 15px;
 }
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller cards for tablets */
+  }
+
+  .project-card img {
+    height: 150px; /* Adjust image height for smaller screens */
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single-column layout for mobile */
+  }
+
+  .project-card img {
+    height: 120px; /* Smaller images for mobile */
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.8rem;
+  }
+}
